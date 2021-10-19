@@ -1,5 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-www.makerbean.com	TRUE	/	FALSE	1999999999	csrftoken	iRX1ioYsU7U1PzkpaK5xMB7rfxshkC40Zpn3uMwngexvdZIzz1Mjt3jwHtDPlHVH
-www.makerbean.com	TRUE	/	FALSE	1999999999	SameSite	Lax
-
