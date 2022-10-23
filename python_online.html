@@ -13,16 +13,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
     <link rel="icon" href="static/images/favicon.ico">
-    
+
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="static/css/plugins/plugins.min.css">
 
     <!-- Main Style CSS -->
-    
+
     <link rel="stylesheet" href="https://makerbean-web.oss-cn-beijing.aliyuncs.com/css/style.min.css">
-    
-    
+
+
 <link rel="stylesheet" href="static/css/online-editor.css">
 <style type="text/css">
     #canvas-modal .modal-dialog {
@@ -51,7 +51,7 @@
     (function() {
       var hm = document.createElement("script");
       hm.src = "https://hm.baidu.com/hm.js?e712693387c3444f47c42c103f7d0e1a";
-      var s = document.getElementsByTagName("script")[0]; 
+      var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
     </script>
@@ -86,7 +86,7 @@
                         <div class="header__navigation d-none d-xl-block">
                             <nav class="navigation-menu">
                                 <ul>
-                                   
+
                                    <li class="header-tab-index"><a href="index.html"><span>首页</span></a></li>
                                     <li class="header-tab-online_courses"><a href="online_courses/index.html"><span>在线课程</span></a></li>
                                     <li class="has-children has-children--multilevel-submenu header-tab-online_programming">
@@ -113,9 +113,9 @@
                         <div class="header__actions">
                             <div class="header__icons-wrapper" id="hidden-icon-wrapper">
                                 <div class="header-button">
-                                    
+
                                     <a class="ht-btn ht-btn--outline" href="#" onclick="open_wechat_login_modal()">登录</a>
-                                    
+
                                 </div>
                             </div>
                             <!-- mobile menu -->
@@ -135,7 +135,7 @@
         </div>
     </div>
     <!--====================  End of header area  ====================-->
-    
+
 <div id="overlay" class="d-none justify-content-center">
     <div class="align-self-center">
         <div class="spinner-border text-success" role="status">
@@ -167,7 +167,7 @@
                 </div>
             </div>
             <div class="run-btn-area mobile-btn-area d-block d-sm-none fixed-bottom">
-                <div class="">  
+                <div class="">
                     <div id="mobile-assist-area">
                         <div class="mobile-assist-btn" onclick="insert_key(',')">,</div>
                         <div class="mobile-assist-btn" onclick="insert_key('.')">.</div>
@@ -199,7 +199,7 @@
             <div class="row mx-0 p-3 d-none" id="files-container">
                 <div class="col-lg-12">
                     <h4>文件（单击可下载）</h4>
-                    <hr>                    
+                    <hr>
                     <ul>
                     </ul>
                 </div>
@@ -315,7 +315,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center text-md-left">
-                        <span class="copyright-text">© 2021 流沙团队 <a href="https://beian.miit.gov.cn/">京ICP备15024205号-8</a></span>
+                        <span class="copyright-text">© 2021 流沙团队 <a href="https://beian.miit.gov.cn/">闽ICP备19021486号-5</a></span>
                     </div>
                 </div>
             </div>
@@ -411,7 +411,7 @@
     <script src="https://makerbean-web.oss-cn-beijing.aliyuncs.com/js/qrcode.min.js"></script>
     <script src="https://makerbean-web.oss-cn-beijing.aliyuncs.com/js/main-no-animation.min.js"></script>
 
-    
+
 
 <script type="text/javascript" src="https://makerbean-web.oss-cn-beijing.aliyuncs.com/js/brython3.9.1/brython_builtins.js"></script>
 <script type="text/javascript" src="https://makerbean-web.oss-cn-beijing.aliyuncs.com/js/brython3.9.1/version_info.js"></script>
@@ -512,10 +512,10 @@
         var code = editor.getValue();
         if (code.search('from makerbean import') >=0 || code.search('import makerbean') >= 0 || code.search('import requests') >= 0 || code.search('import pandas_alive') >= 0) {
             localStorage.setItem('py_src', code);
-            
+
                 open_wechat_login_modal();
-            
-        } else {        
+
+        } else {
             window.run_python();
             if (code.search('createCanvas') >=0 || code.search('background') >= 0 || code.search('import mb_live_chart') >=0) {
                 $('#canvas-modal').modal('show');
@@ -557,9 +557,9 @@
         saveAs(blob, "makerbean.py");
     }
     function share_py() {
-        
+
             open_wechat_login_modal();
-        
+
     }
     function insert_key(key) {
         if (key == 'dq'){
