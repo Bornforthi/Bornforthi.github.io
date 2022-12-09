@@ -1,5 +1,5 @@
-https://www.makerbean.com/ -O "/root/websites/makerbean" -%v
-File generated automatically on Fri, 15 Oct 2021 14:25:10, do NOT edit
+https://www.makerbean.com/ -O /root/websites/makerbean -%v
+File generated automatically on Fri, 09 Dec 2022 11:06:53, do NOT edit
 
 To update a mirror, just launch httrack without any parameters
 The existing cache will be used (and modified)
